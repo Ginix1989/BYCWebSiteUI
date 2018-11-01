@@ -1,8 +1,8 @@
-.body
-{
+.body {
     margin: 0;
 
 }
+
 .container {
     width: 100%;
     height: 100%;
@@ -11,20 +11,99 @@
 }
 
 /*页面上部固定位置栏目*/
-.header
-{
+.header {
     width: 100%;
     height: 100px;
     background-color: yellow;
+    z-index: 1;
     position: fixed;
     top: 0;
     left: 0;
 }
 
+/*新闻资讯*/
+.titleBox {
+    width: 1200px;
+    /*height: 106px;*/
+    margin:30px  auto;
 
-/*测试内容*/
-.testContent
+}
+
+/*蓝色边框*/
+.titleBox-item {
+    border-left: 10px solid #3F87F5;
+    padding-left: 50px;
+    font-family: "Microsoft YaHei UI";
+    color:#ACACAC;
+    font-size: 30px;
+    line-height: 32px;
+}
+
+/*新闻资讯容器*/
+.titleContainer
 {
+    width: 1200px;
+    background-color: goldenrod;
+    margin:60px  auto 60px auto;
+
+}
+/*新闻资讯图片内容*/
+.titleContainer-item
+{
+    width: 270px;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+}
+/*设置图片*/
+.titleContainer-item img
+{
+
+    width: 100%;
+    height: 200px;
+}
+/*设置文字*/
+.titleContainer-text
+{
+    width: 100%;
+    height: 180px;
+    background-color: #3F87F5;
+    display: flex;
+    flex-direction: column;
+}
+.titleContainer-text a{
+    /*font-size: 20px;*/
+    line-height: 25px;
+    width: 250px;
+    margin-left: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+
+}
+
+.titleContainer-text a:-webkit-any-link {
+    color: red;
+    cursor: pointer;
+    text-decoration: none;
+}
+/*.titleContainer-text ul {*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*-webkit-margin-before: 0;*/
+    /*-webkit-margin-after: 0;*/
+    /*-webkit-margin-start: 0px;*/
+    /*-webkit-margin-end: 0px;*/
+    /*-webkit-padding-start: 0;*/
+/*}*/
+/*.titleContainer-text li*/
+/*{*/
+    /*display: list-item;*/
+    /*text-align: left;*/
+   /*margin-left: 20px;*/
+/*}*/
+/*测试内容*/
+.testContent {
     position: relative;
     top: 100px;
 }
