@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>额 中间的定位？</title>
+    <style type="text/css">
+        .testDiv {
+            background-color: blue;
+            width: 50px;
+            height: 100px;
+            margin: 20px auto;
+            -webkit-transition-duration: 1000ms;
+            -moz-transition-duration: 1000ms;
+            -ms-transition-duration: 1000ms;
+            -o-transition-duration: 1000ms;
+            transition-duration: 1000ms;
+
+        }
+        .testDiv:hover
+        {
+            margin: 10px auto;
+            /*margin: 20px auto;*/
+        }
+    </style>
+</head>
+<body style="margin: 0;  ">
+
+<div style="background-color: gray;height: 300px;width: 100%; margin: 20px auto;position: absolute">
+    <div style="background-color: red;width: 100px;height: 200px;  ">
+
+
+    </div>
+
+    <div class="testDiv">
+    </div>
+</div>
+</body>
+</html>
