@@ -50,7 +50,7 @@
 
 }
 
-/*新闻资讯图片内容*/
+/*新闻资讯图片 文字 容器内容*/
 .titleContainer-item {
     width: 270px;
     height: 380px;
@@ -58,10 +58,19 @@
     flex-direction: column;
     border-radius: 10px;
     /*水平距离 垂直距离  模糊距离 越小越清晰 模糊范围 越大越粗*/
-    -webkit-box-shadow: 0px 0px  10px 5px #333333;
-    -moz-box-shadow: 0px 0px  10px 5px #333333;
-    box-shadow: 0px 0px  10px 5px #333333;
-    /*border-radius: 200p;*/
+    -webkit-box-shadow: 0px 0px  20px 3px #333333;
+    -moz-box-shadow: 0px 0px  20px 3px #333333;
+    box-shadow: 0px 0px  20px 3px #333333;
+
+    /*设置动画效果持续时间*/
+    -webkit-transition-duration: 1000ms;
+    -moz-transition-duration: 1000ms;
+    -ms-transition-duration: 1000ms;
+    -o-transition-duration: 1000ms;
+    transition-duration: 1000ms;
+}
+.titleContainer-item:hover {
+    margin-top: -20px;
 }
 
 /*设置图片*/
@@ -124,6 +133,89 @@
     font-size: 20px;
     font-weight: bolder;
 }
+
+
+
+/*课程体系*/
+
+.courseContainer
+{
+    width: 1200px;
+    /*background-color: goldenrod;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:  auto;
+
+}
+
+/*课程体系分项*/
+.courseContainer-item
+{
+    width: 580px;
+    height: 160px;
+    /*background-color: #333333;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*margin: auto;*/
+    /*margin-bottom: 20px;*/
+    margin: 20px 0 10px 0;
+    border-radius: 5px;
+
+    /*水平距离 垂直距离  模糊距离 越小越清晰 模糊范围 越大越粗*/
+    -webkit-box-shadow: 0px 0px  20px 3px #333333;
+    -moz-box-shadow: 0px 0px  20px 3px #333333;
+    box-shadow: 0px 0px  20px 3px #333333;
+
+    /*设置动画效果持续时间*/
+    -webkit-transition-duration: 1000ms;
+    -moz-transition-duration: 1000ms;
+    -ms-transition-duration: 1000ms;
+    -o-transition-duration: 1000ms;
+    transition-duration: 1000ms;
+
+
+}
+/*介绍文字格式*/
+.spanTextColor{
+    color: #929292;
+    font-family: "Microsoft YaHei" ;
+    font-size: 15px;
+}
+
+/*介绍标题格式*/
+.spanTitleText
+{
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+/*课程体系分项 动画*/
+.courseContainer-item:hover
+{
+    margin-top: 10px;
+    color: red;
+}
+
+
+
+.courseContainer-item img
+{
+    width: 80px;
+    height: 80px;
+}
+
+.courserText
+{
+    display: flex;
+    flex-direction: column;
+    width: 385px;
+    height: 80px;
+    margin-left: 5px;
+}
+
 
 /*.titleContainer-text ul {*/
 /*width: 100%;*/
