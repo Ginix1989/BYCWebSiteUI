@@ -19,11 +19,11 @@
             speed: 500,
             intervalTime: 5e3
         }, null != e && n.extend(this.config, this.userConfig);
-        var f = this.el.children(".slider-img"), o = f.children("ul"), l = o.children("li");
-        this.el.append('<a href="javascript:" class="slider-btn slider-btn-left">&lt;</a>'), this.el.append('<a href="javascript:" class="slider-btn slider-btn-right">&gt;</a>');
-        var s = this.el.children(".slider-btn-left"), g = this.el.children(".slider-btn-right");
-        this.el.append('<div class="slider-dot"><ul></ul></div>');
-        for (var a = this.el.children(".slider-dot"), u = a.children("ul"), d = l.length, h = 0; h < d - 2; h++) h === this.config.current ? u.append('<li class="active"></li>') : u.append("<li></li>");
+        var f = this.el.children(".slider-bottom-img"), o = f.children("ul"), l = o.children("li");
+        this.el.append('<a href="javascript:" class="slider-bottom-btn slider-bottom-btn-left">&lt;</a>'), this.el.append('<a href="javascript:" class="slider-bottom-btn slider-bottom-btn-right">&gt;</a>');
+        var s = this.el.children(".slider-bottom-btn-left"), g = this.el.children(".slider-bottom-btn-right");
+        this.el.append('<div class="slider-bottom-dot"><ul></ul></div>');
+        for (var a = this.el.children(".slider-bottom-dot"), u = a.children("ul"), d = l.length, h = 0; h < d - 2; h++) h === this.config.current ? u.append('<li class="active"></li>') : u.append("<li></li>");
         var p = u.children("li");
         o.css("left", -this.config.w * this.config.current - this.config.w);
         var v = function (n) {
@@ -51,11 +51,11 @@
         var w = setInterval(c, r.config.intervalTime)
     };
     n.fn.extend({
-        xSlider: function () {
+        xSlider_bottom: function () {
             new i(n(this))
         }
     })
 }(jQuery);
 
-var config = {current: 0, speed: 500, intervalTime: 2e3};
-$(".slider").xSlider(config);
+var config = {current: 0, speed: 500, intervalTime: 3e3};
+$(".slider-bottom").xSlider_bottom(config);
